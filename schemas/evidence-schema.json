@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/ziwei-doushu-master/evidence-schema.json",
+  "title": "Zi Wei analysis evidence",
+  "type": "object",
+  "required": ["claim", "confidence", "evidence", "counterevidence"],
+  "properties": {
+    "claim": {"type": "string"},
+    "confidence": {"enum": ["high", "medium", "low"]},
+    "evidence": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/item"}},
+    "counterevidence": {"type": "array", "items": {"$ref": "#/$defs/item"}},
+    "sourceLabels": {"type": "array", "items": {"enum": ["SOURCE", "DERIVED", "FRAMEWORK", "INTERPRETATION", "INFERENCE", "UNCERTAIN"]}},
+    "timeScope": {"enum": ["native", "body", "daXian", "liuNian", "smallLimit", "unknown"]},
+    "verificationQuestion": {"type": "string"}
+  },
+  "$defs": {
+    "item": {
+      "type": "object",
+      "required": ["level", "location", "observation"],
+      "properties": {
+        "level": {"enum": [1, 2, 3]},
+        "location": {"type": "string"},
+        "observation": {"type": "string"},
+        "source": {"type": "string"},
+        "direction": {"enum": ["support", "counter", "context"]}
+      }
+    }
+  }
+}

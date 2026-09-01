@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">紫微斗数结构化解盘十二宫关系图</title>
+  <desc id="desc">以命宫和身宫为中心，展示十二宫、三方四正、四化和限运的分析关系。</desc>
+  <rect width="1200" height="760" fill="#f4efe5"/>
+  <rect x="28" y="28" width="1144" height="704" rx="18" fill="none" stroke="#d7c7a6" stroke-width="2"/>
+  <path d="M72 112H1128" stroke="#d7c7a6" stroke-width="2"/>
+  <text x="72" y="78" fill="#14233b" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700">紫微斗数 · 结构化解盘</text>
+  <text x="1128" y="78" text-anchor="end" fill="#8a6b37" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="15" letter-spacing="2">命 · 身 · 宫 · 限 · 化</text>
+
+  <g stroke="#b9a981" stroke-width="1.5" opacity="0.9">
+    <path d="M600 380L600 180"/><path d="M600 380L745 205"/><path d="M600 380L875 285"/>
+    <path d="M600 380L915 380"/><path d="M600 380L875 475"/><path d="M600 380L745 555"/>
+    <path d="M600 380L600 580"/><path d="M600 380L455 555"/><path d="M600 380L325 475"/>
+    <path d="M600 380L285 380"/><path d="M600 380L325 285"/><path d="M600 380L455 205"/>
+  </g>
+
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" text-anchor="middle">
+    <g fill="#fffaf0" stroke="#b9a981" stroke-width="2">
+      <rect x="530" y="138" width="140" height="58" rx="10"/>
+      <rect x="685" y="176" width="140" height="58" rx="10"/>
+      <rect x="815" y="256" width="140" height="58" rx="10"/>
+      <rect x="855" y="351" width="140" height="58" rx="10"/>
+      <rect x="815" y="446" width="140" height="58" rx="10"/>
+      <rect x="685" y="526" width="140" height="58" rx="10"/>
+      <rect x="530" y="564" width="140" height="58" rx="10"/>
+      <rect x="375" y="526" width="140" height="58" rx="10"/>
+      <rect x="245" y="446" width="140" height="58" rx="10"/>
+      <rect x="205" y="351" width="140" height="58" rx="10"/>
+      <rect x="245" y="256" width="140" height="58" rx="10"/>
+      <rect x="375" y="176" width="140" height="58" rx="10"/>
+    </g>
+    <g fill="#14233b" font-size="20" font-weight="700">
+      <text x="600" y="174">命宫</text><text x="755" y="212">兄弟</text><text x="885" y="292">夫妻</text>
+      <text x="925" y="387">子女</text><text x="885" y="482">财帛</text><text x="755" y="562">疾厄</text>
+      <text x="600" y="600">迁移</text><text x="445" y="562">交友</text><text x="315" y="482">官禄</text>
+      <text x="275" y="387">田宅</text><text x="315" y="292">福德</text><text x="445" y="212">父母</text>
+    </g>
+    <g fill="#8a6b37" font-size="12">
+      <text x="600" y="190">核心人格与主轴</text><text x="755" y="228">同辈与网络</text><text x="885" y="308">关系与合作</text>
+      <text x="925" y="403">创造与投入</text><text x="885" y="498">收入与现金流</text><text x="755" y="578">节律与压力</text>
+      <text x="600" y="616">外部环境与行动</text><text x="445" y="578">团队与资源</text><text x="315" y="498">职位与角色</text>
+      <text x="275" y="403">基础与承载</text><text x="315" y="308">满足与内在</text><text x="445" y="228">制度与支持</text>
+    </g>
+  </g>
+
+  <circle cx="600" cy="380" r="104" fill="#14233b"/>
+  <circle cx="600" cy="380" r="88" fill="none" stroke="#d1b475" stroke-width="2"/>
+  <text x="600" y="365" text-anchor="middle" fill="#f4efe5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700">命 · 身</text>
+  <text x="600" y="395" text-anchor="middle" fill="#d1b475" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" letter-spacing="2">STRUCTURE FIRST</text>
+  <text x="600" y="420" text-anchor="middle" fill="#f4efe5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="12">先结构，后判断</text>
+
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13">
+    <rect x="72" y="638" width="238" height="48" rx="8" fill="#e7dcc4"/>
+    <circle cx="96" cy="662" r="7" fill="#b24f3d"/><text x="114" y="667" fill="#14233b">目标宫与三方四正</text>
+    <rect x="330" y="638" width="238" height="48" rx="8" fill="#e7dcc4"/>
+    <circle cx="354" cy="662" r="7" fill="#3b7c78"/><text x="372" y="667" fill="#14233b">本命 · 大限 · 流年</text>
+    <rect x="588" y="638" width="238" height="48" rx="8" fill="#e7dcc4"/>
+    <circle cx="612" cy="662" r="7" fill="#b08a43"/><text x="630" y="667" fill="#14233b">禄 · 权 · 科 · 忌</text>
+    <rect x="846" y="638" width="282" height="48" rx="8" fill="#e7dcc4"/>
+    <circle cx="870" cy="662" r="7" fill="#14233b"/><text x="888" y="667" fill="#14233b">证据 · 反证 · 现实观察</text>
+  </g>
+</svg>

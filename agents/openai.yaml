@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ziwei Doushu Master"
+  short_description: "Source-traceable, structure-first Zi Wei chart analysis"
+  default_prompt: "Use $ziwei-doushu-master to analyze the supplied chart with palace structure, three-harmony/opposite analysis, four transformations, timing layers, counterevidence, confidence, and practical reflective advice."

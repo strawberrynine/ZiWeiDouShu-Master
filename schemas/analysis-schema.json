@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/ziwei-doushu-master/analysis-schema.json",
+  "title": "Zi Wei analysis response",
+  "type": "object",
+  "required": ["method", "question", "summary", "claims", "limitations", "advice"],
+  "properties": {
+    "method": {
+      "type": "object",
+      "required": ["school", "dataValidated", "timeLayers"],
+      "properties": {
+        "school": {"type": "string"},
+        "dataValidated": {"type": "boolean"},
+        "timeLayers": {"type": "array", "items": {"enum": ["native", "body", "daXian", "liuNian", "smallLimit"]}},
+        "uncertainties": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "question": {"type": "string"},
+    "topic": {"type": "string"},
+    "summary": {"type": "string"},
+    "claims": {"type": "array", "items": {"$ref": "evidence-schema.json"}},
+    "timeline": {"type": "array", "items": {"type": "object"}},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "advice": {"type": "array", "items": {"type": "string"}}
+  }
+}

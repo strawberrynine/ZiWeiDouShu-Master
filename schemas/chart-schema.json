@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/ziwei-doushu-master/chart-schema.json",
+  "title": "Zi Wei Dou Shu chart",
+  "type": "object",
+  "required": ["birthInfo", "palaces", "mingGongBranch", "shenGongBranch", "daXians"],
+  "properties": {
+    "birthInfo": {
+      "type": "object",
+      "required": ["year", "month", "day", "hour", "gender"],
+      "properties": {
+        "year": {"type": "integer"},
+        "month": {"type": "integer", "minimum": 1, "maximum": 12},
+        "day": {"type": "integer", "minimum": 1, "maximum": 31},
+        "hour": {"type": "integer", "minimum": 0, "maximum": 11, "description": "Earthly-branch index: 0=子 ... 11=亥"},
+        "gender": {"enum": ["male", "female"]},
+        "name": {"type": "string"},
+        "province": {"type": "string"},
+        "city": {"type": "string"},
+        "longitude": {"type": "number"}
+      },
+      "additionalProperties": true
+    },
+    "mingGongBranch": {"type": "integer", "minimum": 0, "maximum": 11},
+    "shenGongBranch": {"type": "integer", "minimum": 0, "maximum": 11},
+    "wuxingJu": {"type": "integer", "enum": [2, 3, 4, 5, 6]},
+    "wuxingJuName": {"type": "string"},
+    "ziweiPos": {"type": "integer", "minimum": 0, "maximum": 11},
+    "currentAge": {"type": "number"},
+    "currentDaXianIndex": {"type": "integer"},
+    "palaces": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["branch", "stem", "name", "stars"],
+        "properties": {
+          "branch": {"type": "integer", "minimum": 0, "maximum": 11},
+          "stem": {"type": "integer", "minimum": 0, "maximum": 9},
+          "name": {"type": "string"},
+          "stars": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "type"],
+              "properties": {
+                "name": {"type": "string"},
+                "type": {"enum": ["major", "minor", "lucky", "sha"]},
+                "siHua": {"enum": ["禄", "权", "科", "忌"]},
+                "brightness": {"enum": ["bright", "normal", "dim"]}
+              },
+              "additionalProperties": true
+            }
+          },
+          "daXianAge": {"type": "array", "prefixItems": [{"type": "number"}, {"type": "number"}], "minItems": 2, "maxItems": 2},
+          "isMingGong": {"type": "boolean"},
+          "isShenGong": {"type": "boolean"},
+          "isCurrentDaXian": {"type": "boolean"},
+          "oppositeBranch": {"type": "integer"},
+          "isEmpty": {"type": "boolean"},
+          "borrowedFromBranch": {"type": "integer"},
+          "borrowedFromName": {"type": "string"},
+          "borrowedStars": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "daXians": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": true
+}
