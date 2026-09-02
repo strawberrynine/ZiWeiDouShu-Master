@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">紫微斗数 Skill 技术架构 / Zi Wei Dou Shu skill architecture</title>
+  <desc id="desc">从输入与校验，经由主题路由、原典知识和专题框架，到证据化输出；测试与安全边界横向贯穿。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8a6b37"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="820" fill="#f4efe5"/>
+  <rect x="28" y="28" width="1344" height="764" rx="18" fill="none" stroke="#d7c7a6" stroke-width="2"/>
+  <path d="M72 112H1328" stroke="#d7c7a6" stroke-width="2"/>
+  <text x="72" y="78" fill="#14233b" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700">从问题到答案 · From question to answer</text>
+  <text x="1328" y="78" text-anchor="end" fill="#8a6b37" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="14" letter-spacing="2">INPUT · EVIDENCE · REFLECTION</text>
+
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+    <g stroke="#8a6b37" stroke-width="2.5" fill="none" marker-end="url(#arrow)">
+      <path d="M286 294H330"/>
+      <path d="M550 294H594"/>
+      <path d="M814 294H858"/>
+      <path d="M1078 294H1122"/>
+    </g>
+
+    <g>
+      <rect x="70" y="174" width="216" height="246" rx="12" fill="#fffaf0" stroke="#b24f3d" stroke-width="2.5"/>
+      <circle cx="104" cy="214" r="20" fill="#b24f3d"/>
+      <text x="104" y="221" text-anchor="middle" fill="#fffaf0" font-size="18" font-weight="700">01</text>
+      <text x="104" y="274" fill="#14233b" font-size="21" font-weight="700">输入</text>
+      <text x="104" y="301" fill="#8a6b37" font-size="14">Input</text>
+      <text x="94" y="345" fill="#14233b" font-size="13">结构化命盘</text>
+      <text x="94" y="370" fill="#14233b" font-size="13">出生资料 / 截图</text>
+      <text x="94" y="403" fill="#6a6254" font-size="12">prompts/intake.md</text>
+    </g>
+
+    <g>
+      <rect x="334" y="174" width="216" height="246" rx="12" fill="#fffaf0" stroke="#3b7c78" stroke-width="2.5"/>
+      <circle cx="368" cy="214" r="20" fill="#3b7c78"/>
+      <text x="368" y="221" text-anchor="middle" fill="#fffaf0" font-size="18" font-weight="700">02</text>
+      <text x="368" y="274" fill="#14233b" font-size="21" font-weight="700">校验</text>
+      <text x="368" y="301" fill="#8a6b37" font-size="14">Validation</text>
+      <text x="358" y="345" fill="#14233b" font-size="13">字段、历法、时辰</text>
+      <text x="358" y="370" fill="#14233b" font-size="13">命宫 / 身宫 / 十二宫</text>
+      <text x="358" y="403" fill="#6a6254" font-size="12">schemas/*.json</text>
+    </g>
+
+    <g>
+      <rect x="598" y="174" width="216" height="246" rx="12" fill="#fffaf0" stroke="#b08a43" stroke-width="2.5"/>
+      <circle cx="632" cy="214" r="20" fill="#b08a43"/>
+      <text x="632" y="221" text-anchor="middle" fill="#fffaf0" font-size="18" font-weight="700">03</text>
+      <text x="632" y="274" fill="#14233b" font-size="21" font-weight="700">路由</text>
+      <text x="632" y="301" fill="#8a6b37" font-size="14">Topic router</text>
+      <text x="622" y="345" fill="#14233b" font-size="13">夫妻、事业、财富</text>
+      <text x="622" y="370" fill="#14233b" font-size="13">迁移、时间、全盘</text>
+      <text x="622" y="403" fill="#6a6254" font-size="12">prompts/topic-router.md</text>
+    </g>
+
+    <g>
+      <rect x="862" y="174" width="216" height="246" rx="12" fill="#fffaf0" stroke="#14233b" stroke-width="2.5"/>
+      <circle cx="896" cy="214" r="20" fill="#14233b"/>
+      <text x="896" y="221" text-anchor="middle" fill="#fffaf0" font-size="18" font-weight="700">04</text>
+      <text x="886" y="274" fill="#14233b" font-size="21" font-weight="700">取证</text>
+      <text x="886" y="301" fill="#8a6b37" font-size="14">Knowledge + frameworks</text>
+      <text x="886" y="345" fill="#14233b" font-size="13">原典、宫位、星曜、四化</text>
+      <text x="886" y="370" fill="#14233b" font-size="13">专题框架与时间层</text>
+      <text x="886" y="403" fill="#6a6254" font-size="12">knowledge/ · frameworks/</text>
+    </g>
+
+    <g>
+      <rect x="1126" y="174" width="216" height="246" rx="12" fill="#fffaf0" stroke="#b24f3d" stroke-width="2.5"/>
+      <circle cx="1160" cy="214" r="20" fill="#b24f3d"/>
+      <text x="1160" y="221" text-anchor="middle" fill="#fffaf0" font-size="18" font-weight="700">05</text>
+      <text x="1150" y="274" fill="#14233b" font-size="21" font-weight="700">输出</text>
+      <text x="1150" y="301" fill="#8a6b37" font-size="14">Evidence-led answer</text>
+      <text x="1150" y="345" fill="#14233b" font-size="13">结论、反证、置信度</text>
+      <text x="1150" y="370" fill="#14233b" font-size="13">现实观察与建议</text>
+      <text x="1150" y="403" fill="#6a6254" font-size="12">prompts/output.md</text>
+    </g>
+
+    <rect x="70" y="490" width="1272" height="118" rx="12" fill="#e7dcc4" stroke="#d1b475" stroke-width="1.5"/>
+    <text x="102" y="530" fill="#14233b" font-size="18" font-weight="700">贯穿全程 · Across every layer</text>
+    <text x="102" y="560" fill="#6a6254" font-size="13">结构顺序：命宫 / 身宫 → 三方四正与对宫 → 四化与辅煞 → 本命 / 大限 / 流年 → 反证</text>
+    <text x="102" y="586" fill="#6a6254" font-size="13">Method: core palaces → relational field → transformations and modifiers → timing layers → counterevidence</text>
+
+    <g>
+      <rect x="70" y="650" width="620" height="92" rx="10" fill="#14233b"/>
+      <text x="98" y="685" fill="#d1b475" font-size="15" font-weight="700">质量检查 · Quality</text>
+      <text x="98" y="713" fill="#f4efe5" font-size="13">tests/test-cases.md · tests/evaluation-rubric.md</text>
+      <text x="98" y="735" fill="#f4efe5" font-size="12">测试取证、冲突处理和安全边界，不替代人工判断。</text>
+    </g>
+    <g>
+      <rect x="722" y="650" width="620" height="92" rx="10" fill="#b24f3d"/>
+      <text x="750" y="685" fill="#fffaf0" font-size="15" font-weight="700">边界 · Guardrails</text>
+      <text x="750" y="713" fill="#fffaf0" font-size="13">不作医疗、法律、投资或宿命式保证</text>
+      <text x="750" y="735" fill="#fffaf0" font-size="12">No diagnosis, legal advice, financial advice, or deterministic claims.</text>
+    </g>
+  </g>
+</svg>
